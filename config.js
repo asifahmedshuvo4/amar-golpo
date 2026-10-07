@@ -5,7 +5,7 @@
 const CONFIG = {
   // উদাহরণ: username = "rahim", repo = "amar-golpo"
   // তাহলে লিখবেন: "rahim/amar-golpo"
-  githubRepo: "YOUR_USERNAME/YOUR_REPO_NAME",
+  githubRepo: "asifahmedshuvo4/amar-golpo",
 
   // ছবির সম্ভাব্য এক্সটেনশন (প্রথমে যেটা পাবে সেটাই নেবে)
   imageExtensions: [".jpg", ".jpeg", ".png", ".webp", ".gif"],
@@ -13,3 +13,4 @@ const CONFIG = {
   // GitHub branch (সাধারণত main বা master)
   branch: "main"
 };
+ 
