@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>আমার গল্প | My Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📖</span>
+        <span class="logo-text">আমার গল্প</span>
+      </a>
+      <p class="tagline">ছোট ছোট গল্পের সংগ্রহ</p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="container">
+      <!-- Loading -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>গল্প লোড হচ্ছে...</p>
+      </div>
+
+      <!-- Error -->
+      <div id="error" class="error hidden">
+        <p id="error-msg"></p>
+      </div>
+
+      <!-- Story Grid -->
+      <div id="story-grid" class="story-grid"></div>
+
+      <!-- Empty state -->
+      <div id="empty" class="empty hidden">
+        <div class="empty-icon">📭</div>
+        <h2>এখনো কোনো গল্প নেই</h2>
+        <p>story/ ফোল্ডারে .txt ফাইল এবং pic/ ফোল্ডারে একই নামে ছবি আপলোড করুন।</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Story Modal / Full View -->
+  <div id="story-modal" class="modal hidden">
+    <div class="modal-overlay" onclick="closeStory()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeStory()" aria-label="বন্ধ করুন">✕</button>
+      <div class="modal-image-wrap">
+        <img id="modal-img" src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <h1 id="modal-title"></h1>
+        <div id="modal-text" class="modal-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>♥ দিয়ে বানানো · GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
